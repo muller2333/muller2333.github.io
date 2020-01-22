@@ -28,7 +28,7 @@ twitter_username: deeperbluecmd
 github_username:  muller2333
 
 # Build settings
-theme: jekyll-theme-cayman
+theme: minima
 plugins:
   - jekyll-feed
 
