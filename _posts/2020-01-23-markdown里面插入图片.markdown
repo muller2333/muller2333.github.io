@@ -7,3 +7,6 @@ categories: jekyll update·
 ![图片](https://pic4.zhimg.com/v2-57f0f63de851546e9e0b42ff293af5d1_r.jpg)
 
 <iframe src="//player.bilibili.com/player.html?aid=61104141&cid=106312750&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<iframe width="1004" height="753" src="https://www.youtube.com/embed/-LPLBYAiQew" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
