@@ -6,7 +6,7 @@ categories: jekyll update·
 ---
 ![图片](https://pic4.zhimg.com/v2-57f0f63de851546e9e0b42ff293af5d1_r.jpg)
 
-```
+```html
 <video id="video" controls="" preload="none" poster="http://media.w3.org/2010/05/sintel/poster.png">
       <source id="mp4" src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
       <source id="webm" src="http://media.w3.org/2010/05/sintel/trailer.webm" type="video/webm">
