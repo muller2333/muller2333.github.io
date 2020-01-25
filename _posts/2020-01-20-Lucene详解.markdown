@@ -4,17 +4,15 @@ title:  "Lucene详解"
 date:   2020-01-24 19:37:46 +0800
 categories: jekyll update·
 ---
-```java
-public TransportClient HelloWorld {
-	
-}
-```
 
-```
-<video id="video" controls="" preload="none" poster="http://media.w3.org/2010/05/sintel/poster.png">
-      <source id="mp4" src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4">
-      <source id="webm" src="http://media.w3.org/2010/05/sintel/trailer.webm" type="video/webm">
-      <source id="ogv" src="http://media.w3.org/2010/05/sintel/trailer.ogv" type="video/ogg">
-      <p>Your user agent does not support the HTML5 Video element.</p>
-    </video>
-```
+#	正排索引
+
+遍历文档集，对每个文档进行逐行扫描，包含关键字则加入结果集中
+
+![正排索引](/images/正排索引.png)
+
+# 倒排索引
+
+预先将包含关键字的文档组装成结果集，命中关键字则显示对应的结果集
+
+![倒排索引](/images/倒排索引.png)
