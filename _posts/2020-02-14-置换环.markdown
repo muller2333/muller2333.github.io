@@ -7,7 +7,7 @@ categories: jekyll update·
 # 定义
 置换环指的是
 
-# 算法
+# 代码
 ```
 import java.util.Arrays;
 import java.util.HashMap;
