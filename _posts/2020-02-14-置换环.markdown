@@ -4,7 +4,10 @@ title:  "置换环"
 date:   2020-02-14 17:24:13 +0800
 categories: jekyll update·
 ---
+#定义
 
+
+#算法
 ```
 import java.util.Arrays;
 import java.util.HashMap;
