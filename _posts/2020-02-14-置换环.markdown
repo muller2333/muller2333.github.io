@@ -5,7 +5,7 @@ date:   2020-02-14 17:24:13 +0800
 categories: jekyll update·
 ---
 #定义
-
+置换环指的是
 
 #算法
 ```
@@ -15,6 +15,7 @@ import java.util.Map;
 
 class Solution {
     public int getCount(int[] arr) {
+        //将数组复制一份
         int[] sorted = Arrays.copyOf(arr, arr.length);
         Arrays.sort(sorted);
         Map<Integer, Integer> map = new HashMap<>();
