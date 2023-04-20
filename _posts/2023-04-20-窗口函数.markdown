@@ -1,0 +1,65 @@
+---
+layout: post title:  "窗口函数"
+date:   2023-04-20 14:24:13 +0800 categories: jekyll update·
+---
+
+# 表结构
+
+```sql
+create table Students
+(
+    student_id int not null,
+    class_id   int not null,
+    score      int not null
+);
+```
+
+# row_number()
+
+```sql
+select student_id,
+       class_id,
+       score,
+       r
+from (select student_id,
+             class_id,
+             score,
+             if(class_id = @pre_class_id, @rownum := @rownum + 1, @rownum := 1) r,
+             @pre_class_id := class_id
+      from Students,
+          (select @pre_class_id := null) vars
+      order by class_id, score) mid;
+```
+
+# rank()
+
+```sql
+select student_id,
+       class_id,
+       score,
+       r
+from (select student_id,
+             class_id,
+             score,
+             (select count(score) + 1 from Students where class_id = s.class_id and score < s.score) r
+      from Students s) mid
+order by class_id, r;
+```
+
+# dense_rank()
+
+```sql
+select student_id,
+       class_id,
+       score,
+       r
+from (select student_id,
+             class_id,
+             score,
+             if(class_id = @pre_class_id, @rownum := @rownum + if(@pre_score = score, 0, 1), @rownum := 1) r,
+             @pre_class_id := class_id,
+             @pre_score := score
+      from Students,
+          (select @pre_score := null, @pre_class_id := null) vars
+      order by class_id, score) mid;
+```
